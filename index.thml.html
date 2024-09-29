@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSTU Story</title>
+    <link rel="stylesheet" href="mysyle.css">
+    <style>
+        body {
+            background-color: rgb(25, 178, 230);
+        }
+        h1 {
+            color: rgb(238, 255, 0);
+        }
+        h2 {
+            color: rgb(201, 8, 79);
+        }
+        h4 {
+            color: rgb(250, 216, 24);
+        }
+        .pp {
+            border-radius: 50%;
+            width: 150px; /* Adjust size as needed */
+        }
+        .fav li {
+            list-style-type: none;
+        }
+        /* Nav styles */
+        nav {
+            background-color: rgb(0, 102, 204);
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💻 MY CSTU Story 💻</h1>
+        <nav>
+            <ul>
+                <li><a href="#personal">ข้อมูลส่วนตัว</a></li>
+                <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                <li><a href="#profile">ประวัติส่วนตัว</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="personal">
+            <h2>ข้อมูลส่วนตัว👨🏻‍💻</h2>
+            <ul>
+                <li><img src="resources/Screenshot 2024-09-01 212807.png" class="pp" alt="Profile Picture"></li>
+                <li><h4>ชื่อ: กนกพจน์ กาญจนประทุม</h4></li>
+                <li><h4>ชื่อเล่น: วอม</h4></li>
+            </ul>
+            <video width="400" controls>
+                <source src="./resources/aa.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="about">
+            <h2>เกี่ยวกับฉัน✨</h2>
+            <ul>
+                <li><h4>กำลังศึกษา: มหาวิทยาลัย ธรรมศาสตร์</h4></li>
+                <li><h4>คณะ: วิทยาศาสตร์และเทคโนโลยี</h4></li>
+                <li><h4>สาขา: วิทยาการคอมพิวเตอร์</h4></li>
+            </ul>
+        </section>
+
+        <section id="profile" class="skills">
+            <h2>ประวัติส่วนตัว📞</h2>
+            <ul>
+                <li><h4>งานอดิเรก: เล่นเกม, เล่นกีฬา, ฟังเพลง</h4></li>
+                <li>
+                    <h4>
+                        <details>
+                            <summary>สิ่งที่ชอบ</summary>
+                            <ul class="fav">
+                                <li><strong>เล่นเกม:</strong> Valorant, Tom Clancy's Rainbow Six Siege</li>
+                                <li><strong>ดูหนัง:</strong></li>
+                            </ul>
+                        </details>
+                    </h4>
+                </li>
+                <li><h4>เคยศึกษา: โรงเรียนนวมินทราชินูทิศ หอวัง นนทบุรี</h4></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <ul>
+            <li><h4>ติดต่อ: <a href="mailto:kanokphot.kan@dome.tu.ac.th">ส่งอีเมลหาเรากดที่นี้</a></h4></li>
+            <li><h4>เบอร์ติดต่อ: 0619173331</h4></li>
+            <li><h4>Instagram: wxr__wxrm</h4></li>
+        </ul>
+        <figure>
+            <img src="resources/Josee.gif" alt="หิวข้าว" width="500">
+        </figure>
+    </footer>
+</body>
+</html>

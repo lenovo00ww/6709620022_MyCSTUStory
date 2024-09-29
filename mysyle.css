@@ -1,0 +1,38 @@
+
+h1 {
+ 
+    background-color: #4009be;
+    padding: 10px 0;
+    margin: 0;
+    border: 2px solid #293242;
+
+}
+
+
+
+h2 {
+    background-color: #4212b4;
+    display: inline-block;
+    border: 2px solid #293242;
+    color: #6c63ee;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+
+ul {
+    font-size: 19px;   
+    margin-left: 50px;
+}
+
+
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.pp{
+width: 400px;
+}
+
