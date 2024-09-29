@@ -1,58 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CSTU Story</title>
-    <link rel="stylesheet" href="mysyle.css">
     <style>
         body {
-            background-color: rgb(25, 178, 230);
+            background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
-        h1 {
-            color: rgb(238, 255, 0);
-        }
-        h2 {
-            color: rgb(201, 8, 79);
-        }
-        h4 {
-            color: rgb(250, 216, 24);
-        }
-        .pp {
-            border-radius: 50%;
-            width: 150px; /* Adjust size as needed */
-        }
-        .fav li {
-            list-style-type: none;
-        }
-        /* Nav styles */
-        nav {
-            background-color: rgb(0, 102, 204);
-            padding: 10px;
+
+        header {
+            background: linear-gradient(to right, #00796b, #004d40);
+            padding: 20px;
             text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
         nav ul {
             list-style-type: none;
+            margin: 20px 0;
             padding: 0;
+            text-align: center;
         }
+
         nav ul li {
             display: inline;
             margin: 0 15px;
         }
+
         nav ul li a {
-            color: white;
+            color: #ffcc80;
             text-decoration: none;
             font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s, transform 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
+
         nav ul li a:hover {
-            text-decoration: underline;
+            color: white;
+            transform: scale(1.1);
+            background: rgba(255, 204, 128, 0.8);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f1f8e9;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #00796b;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 20px;
+            color: #d84315;
+            margin-bottom: 10px;
+        }
+
+        .pp {
+            border-radius: 50%;
+            width: 150px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        video {
+            display: block;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        details {
+            margin: 10px 0;
+        }
+
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #00796b;
+            font-size: 18px;
+            padding: 5px;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        details summary:hover {
+            background: #b2dfdb;
+        }
+
+        ul.fav {
+            margin-top: 10px;
+        }
+
+        ul.fav li {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        footer {
+            background: linear-gradient(to right, #00796b, #004d40);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #ffcc80;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        footer figure {
+            margin: 20px 0;
+        }
+
+        footer img {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills {
+            background-color: #f1f8e9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section ul {
+            padding-left: 20px;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>💻 MY CSTU Story 💻</h1>
         <nav>
+            <ul>
+                <li><a href="#">Home page</a></li>
+                <li><a href="#">My Journey</a></li>
+                <li><a href="#">Future Plan</a></li>
+            </ul>
             <ul>
                 <li><a href="#personal">ข้อมูลส่วนตัว</a></li>
                 <li><a href="#about">เกี่ยวกับฉัน</a></li>
@@ -67,8 +220,12 @@
             <h2>ข้อมูลส่วนตัว👨🏻‍💻</h2>
             <ul>
                 <li><img src="resources/Screenshot 2024-09-01 212807.png" class="pp" alt="Profile Picture"></li>
-                <li><h4>ชื่อ: กนกพจน์ กาญจนประทุม</h4></li>
-                <li><h4>ชื่อเล่น: วอม</h4></li>
+                <li>
+                    <h4>ชื่อ: กนกพจน์ กาญจนประทุม</h4>
+                </li>
+                <li>
+                    <h4>ชื่อเล่น: วอม</h4>
+                </li>
             </ul>
             <video width="400" controls>
                 <source src="./resources/aa.mp4" type="video/mp4">
@@ -79,41 +236,53 @@
         <section id="about">
             <h2>เกี่ยวกับฉัน✨</h2>
             <ul>
-                <li><h4>กำลังศึกษา: มหาวิทยาลัย ธรรมศาสตร์</h4></li>
-                <li><h4>คณะ: วิทยาศาสตร์และเทคโนโลยี</h4></li>
-                <li><h4>สาขา: วิทยาการคอมพิวเตอร์</h4></li>
+                <li>
+                    <h4>กำลังศึกษา: มหาวิทยาลัย ธรรมศาสตร์</h4>
+                </li>
+                <li>
+                    <h4>คณะ: วิทยาศาสตร์และเทคโนโลยี</h4>
+                </li>
+                <li>
+                    <h4>สาขา: วิทยาการคอมพิวเตอร์</h4>
+                </li>
             </ul>
         </section>
 
         <section id="profile" class="skills">
             <h2>ประวัติส่วนตัว📞</h2>
             <ul>
-                <li><h4>งานอดิเรก: เล่นเกม, เล่นกีฬา, ฟังเพลง</h4></li>
                 <li>
-                    <h4>
-                        <details>
-                            <summary>สิ่งที่ชอบ</summary>
-                            <ul class="fav">
-                                <li><strong>เล่นเกม:</strong> Valorant, Tom Clancy's Rainbow Six Siege</li>
-                                <li><strong>ดูหนัง:</strong></li>
-                            </ul>
-                        </details>
-                    </h4>
+                    <h4>งานอดิเรก: เล่นเกม, เล่นกีฬา, ฟังเพลง</h4>
                 </li>
-                <li><h4>เคยศึกษา: โรงเรียนนวมินทราชินูทิศ หอวัง นนทบุรี</h4></li>
+                <li>
+                    <details>
+                        <summary>สิ่งที่ชอบ</summary>
+                        <ul class="fav">
+                            <li><strong>เล่นเกม:</strong> Valorant, Tom Clancy's Rainbow Six Siege</li>
+                            <li><strong>ดูหนัง:</strong></li>
+                        </ul>
+                    </details>
+                </li>
+                <li>
+                    <h4>เคยศึกษา: โรงเรียนนวมินทราชินูทิศ หอวัง นนทบุรี</h4>
+                </li>
             </ul>
         </section>
     </main>
 
     <footer id="contact">
         <ul>
-            <li><h4>ติดต่อ: <a href="mailto:kanokphot.kan@dome.tu.ac.th">ส่งอีเมลหาเรากดที่นี้</a></h4></li>
-            <li><h4>เบอร์ติดต่อ: 0619173331</h4></li>
-            <li><h4>Instagram: wxr__wxrm</h4></li>
+            <li>
+                <h4>ติดต่อ: <a href="mailto:kanokphot.kan@dome.tu.ac.th">ส่งอีเมลหาเรากดที่นี้</a></h4>
+            </li>
+            <li>
+                <h4>เบอร์ติดต่อ: 0619173331</h4>
+            </li>
+            <li>
+                <h4>Instagram: wxr__wxrm</h4>
+            </li>
         </ul>
         <figure>
-            <img src="resources/Josee.gif" alt="หิวข้าว" width="500">
-        </figure>
-    </footer>
-</body>
+            <img>
+
 </html>
