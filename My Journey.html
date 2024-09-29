@@ -6,50 +6,112 @@
     <meta charset="UTF-8">
     <title>My Journey</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
+            font-family: 'Prompt', sans-serif;
+            background-image: linear-gradient(to right, #a1c4fd, #c2e9fb);
             margin: 0;
-            padding: 20px;
-            line-height: 1.6;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #6a5acd, #6a9ffb);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: linear-gradient(to right, #8a85ff, #4682b4);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             text-align: center;
             color: #2f4f4f;
-        }
-
-        p {
-            font-size: 1.2em;
-            color: #333;
-            margin-bottom: 10px;
+            margin-top: 40px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
             background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .container p {
-            padding-left: 20px;
-            text-indent: -15px;
+            font-size: 1.4em;
+            color: #333;
+            margin-bottom: 20px;
+            padding-left: 30px;
+            text-indent: -20px;
         }
 
         .container p:before {
             content: "•";
-            padding-right: 10px;
+            padding-right: 15px;
             color: #4682b4;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #6a5acd;
+            color: white;
+            margin-top: 50px;
+            font-size: 1em;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
+
+    <nav>
+        <ul>
+            <li><a href="index.thml.html">Home</a></li>
+            <li><a href="Future Plan.html">Future Plan</a></li>
+            <li><a href="My Journey.html">My Journey</a></li>
+        </ul>
+    </nav>
+
+    <h1>แผนการในอนาคตของฉัน</h1>
+
     <div class="container">
-        <h1>แผนการในอนาคตของฉันหลังจบจากรั้วบ้าน CSTU</h1>
         <p>หางานในสิ่งที่ตัวเองชอบหรือถนัด</p>
         <p>ฝึกงานกับบริษัทหรือองค์กรภายนอก</p>
         <p>เรียนรู้ในสิ่งต่างๆ</p>
@@ -59,6 +121,11 @@
         <p>ได้เที่ยว</p>
         <p>หาตัวตนของตัวเองให้เจอ</p>
     </div>
+
+    <footer>
+        <p>&copy;2024 My Journey&copy;</p>
+    </footer>
+
 </body>
 
 </html>
